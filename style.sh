@@ -20,6 +20,6 @@ echo -e "ㅤ"
 
 echo -e "${YELLOW} - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
 echo -e "${BOLD}${GREEN}Powered By"
-echo -e "${RED}Apex.Cloud ©️ Company 🌟"
-echo "VPS By _2w3 (Jake)"
+echo -e "${RED}Lodycloud ©️ Company 🌟"
+echo "VPS motorcyles._ egg made by: czo (Jake)"
 echo -e "${YELLOW} - - - - - - - - - - - - - - - - ${WHITE}[ ${BOLD}${GREEN}TYPE YOUR COMMAND ${WHITE}]${YELLOW} - - - - - - - - - - - - - - "
