@@ -57,7 +57,7 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
@@ -71,11 +71,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     2)
@@ -85,11 +85,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/etc/profile.d/ -p
       
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     *)
