@@ -30,9 +30,9 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 echo "#######################################################################################"
 echo "#"
-echo "#                                    > ApexCloud VPS <"
+echo "#                                    > Lofycloud <"
 echo "#"
-echo "#                           Copyright (C) 2022 - 2023, Apex.Cloud"
+echo "#                           
 echo "#"
 echo "#"
 echo "#######################################################################################"
@@ -57,11 +57,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/style.sh"
       ;;
 
     1)
@@ -71,11 +71,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/style.sh"
       ;;
 
     2)
@@ -136,4 +136,3 @@ fi
 --rootfs="${ROOTFS_DIR}" \
 -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit \
 /bin/bash
-
