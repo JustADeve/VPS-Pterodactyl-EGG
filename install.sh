@@ -41,13 +41,11 @@ else
     touch installed
     ./dist/proot -S . /bin/bash -c "mv apth /usr/bin/"
     ./dist/proot -S . /bin/bash -c "mv unzip /usr/bin/"
-    ./dist/proot -S . /bin/bash -c "apt-get update"
-    ./dist/proot -S . /bin/bash -c "apt-get -y upgrade"
-    ./dist/proot -S . /bin/bash -c "apt-get -y install curl"
-    ./dist/proot -S . /bin/bash -c "apt-get -y install wget"
-    ./dist/proot -S . /bin/bash -c "apt-get -y install neofetch"
-    ./dist/proot -S . /bin/bash -c "curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py"
-    ./dist/proot -S . /bin/bash -c "chmod +x /bin/systemctl"
+    sudo apt-get update --allow-releaseinfo-change
+    sudo apt-get -y upgrade
+    sudo apt-get -y install curl wget neofetch
+    sudo curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
+    sudo chmod +x /bin/systemctl
     echo "Starting PteroVM"
     ./dist/proot -S . /bin/bash --login
 fi
