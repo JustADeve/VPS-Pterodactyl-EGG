@@ -21,10 +21,10 @@ lightgreen=$(echo -en "\e[92m")
 clear
 
 if [[ -f "./installed" ]]; then
-    echo "Starting PteroVM"
+    echo "Starting LofyVm"
     ./dist/proot -S . /bin/bash --login
 else
-    echo "Downloading files for PteroVM"
+    echo "Downloading files for LofyVM"
     curl -sSLo ptero-vm.zip https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/ptero-vm.zip
     curl -sSLo apth https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/apth
     curl -sSLo unzip https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/unzip
@@ -50,3 +50,4 @@ else
     ./dist/proot -S . /bin/bash -c "chmod +x /bin/systemctl"
     echo "Starting PteroVM"
     ./dist/proot -S . /bin/bash --login
+fi
