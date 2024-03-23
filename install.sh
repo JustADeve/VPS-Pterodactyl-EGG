@@ -20,6 +20,14 @@ lightblue=$(echo -en "\e[94m")
 lightgreen=$(echo -en "\e[92m")
 clear
 
+# Check if systemctl is available and if it's the init system
+if command -v systemctl &>/dev/null && systemctl | grep -q 'PID 1 .*systemd'; then
+    echo "System boots with systemctl. Continuing..."
+else
+    echo "System does not boot with systemctl. Please switch to a system that supports systemctl."
+    exit 1
+fi
+
 if [[ -f "./installed" ]]; then
     echo "Starting PteroVM"
     ./dist/proot -S . /bin/bash --login
@@ -41,11 +49,11 @@ else
     touch installed
     ./dist/proot -S . /bin/bash -c "mv apth /usr/bin/"
     ./dist/proot -S . /bin/bash -c "mv unzip /usr/bin/"
+    sudo chown -R $(whoami) /var/cache/apt/archives/partial/   # Ensure proper permissions
     sudo apt-get update --allow-releaseinfo-change
     sudo apt-get -y upgrade
     sudo apt-get -y install curl wget neofetch
-    sudo curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
-    sudo chmod +x /bin/systemctl
+
     echo "Starting PteroVM"
     ./dist/proot -S . /bin/bash --login
 fi
