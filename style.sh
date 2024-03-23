@@ -23,8 +23,5 @@ echo -e "${BOLD}${GREEN}Powered By: Lofycloud"
 echo -e "${RED}Egg provided by : Apex.cloud©️ Company 🌟"
 echo "VPS motorcyles._ egg made by: czo (Jake)"
 echo -e "${RED}Please run this before starting using your vps. :
-curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
-Then: apt install python3 -y After this:
-chmod +x /usr/bin/systemctl  And you are ready!
-"
+curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py Then: apt install python3 -y After this: chmod +x /usr/bin/systemctl  And you are ready!"
 echo -e "${YELLOW} - - - - - - - - - - - - - - - - ${WHITE}[ ${BOLD}${GREEN}TYPE YOUR COMMAND ${WHITE}]${YELLOW} - - - - - - - - - - - - - - "
