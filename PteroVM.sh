@@ -30,9 +30,9 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 echo "#######################################################################################"
 echo "#"
-echo "#                                    > Lofycloud VPS <"
+echo "#                                    > Lofycloud <"
 echo "#"
-echo "#                          
+echo "#                        
 echo "#"
 echo "#"
 echo "#######################################################################################"
@@ -57,7 +57,7 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
@@ -71,11 +71,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
       ;;
 
     2)
@@ -89,7 +89,7 @@ echo "##########################################################################
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
       ;;
 
     *)
@@ -122,16 +122,17 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
     touch "$ROOTFS_DIR/.installed"
 fi
 
-# Download systemctl replacement script and install Python 3
-# Set executable permission for systemctl
-curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py
-apt install python3 -y
-chmod +x /bin/systemctl
-
 # Print some useful information to the terminal before entering PRoot.
 # This is to introduce the user with the various Alpine Linux commands.
 
-# Execute the command to start the PRoot environment
+
+###########################
+# Start PRoot environment #
+###########################
+
+# This command starts PRoot and binds several important directories
+# from the host file system to our special root file system.
 "$ROOTFS_DIR/usr/local/bin/proot" \
 --rootfs="${ROOTFS_DIR}" \
--0
+-0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit \
+/bin/bash
