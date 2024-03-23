@@ -57,11 +57,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     1)
@@ -71,7 +71,7 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
