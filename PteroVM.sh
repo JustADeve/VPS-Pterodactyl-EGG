@@ -30,9 +30,9 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 echo "#######################################################################################"
 echo "#"
-echo "#                                    > ApexCloud VPS <"
+echo "#                                    > Lofycloud <"
 echo "#"
-echo "#                           Copyright (C) 2022 - 2023, Apex.Cloud"
+echo "#                           Copyright (C) 2022 - 2023, Apex"
 echo "#"
 echo "#"
 echo "#######################################################################################"
@@ -61,7 +61,7 @@ echo "##########################################################################
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     1)
@@ -75,7 +75,7 @@ echo "##########################################################################
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     2)
@@ -89,7 +89,7 @@ echo "##########################################################################
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
+      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
       ;;
 
     *)
