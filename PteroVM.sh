@@ -30,9 +30,9 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 echo "#######################################################################################"
 echo "#"
-echo "#                                    > ApexCloud VPS <"
+echo "#                                    > Lofycloud"
 echo "#"
-echo "#                           Copyright (C) 2022 - 2023, Apex.Cloud"
+echo "#                           Copyright (C) 2022 - 2023, Apex"
 echo "#"
 echo "#"
 echo "#######################################################################################"
@@ -136,4 +136,3 @@ fi
 --rootfs="${ROOTFS_DIR}" \
 -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit \
 /bin/bash
-
