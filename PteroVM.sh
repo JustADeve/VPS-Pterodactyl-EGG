@@ -30,9 +30,9 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 echo "#######################################################################################"
 echo "#"
-echo "#                                    > Lofycloud <"
+echo "#                                    > ApexCloud VPS <"
 echo "#"
-echo "#                        
+echo "#                           Copyright (C) 2022 - 2023, Apex.Cloud"
 echo "#"
 echo "#"
 echo "#######################################################################################"
@@ -57,11 +57,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
       ;;
 
     1)
@@ -71,11 +71,11 @@ echo "##########################################################################
       mkdir $ROOTFS_DIR/home/container/ -p
 
       wget -O $ROOTFS_DIR/home/container/installer.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/private.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/private.sh"
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
       ;;
 
     2)
@@ -89,7 +89,7 @@ echo "##########################################################################
       wget -O $ROOTFS_DIR/home/container/.bashrc \
       "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/.bashrc"
       wget -O $ROOTFS_DIR/home/container/style.sh \
-      "https://raw.githubusercontent.com/JustADeve/VPS-Pterodactyl-EGG/main/style.sh"
+      "https://github.com/abdalla435/VPS-Pterodactyl-EGG/raw/main/style.sh"
       ;;
 
     *)
